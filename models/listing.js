@@ -8,12 +8,14 @@ const listingSchema = new Schema({
     },
     description: String,
     image: {
-        type: String,
-        default: "https://unsplash.com/photos/open-book-on-wooden-chair-GxLHMk-jRsg",
-        set: (v) => 
-            v === ""
-            ? "https://unsplash.com/photos/open-book-on-wooden-chair-GxLHMk-jRsg"
-            : v,
+        filename: {
+            type: String,
+            default: "listingimage"
+        },
+        url: {
+            type: String,
+            default: "https://unsplash.com/photos/neon-signs-in-shibuya-tokyo-street-p8lNJRI9MRc"
+        }
     },
     price: String,
     location: String,
