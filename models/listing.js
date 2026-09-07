@@ -17,7 +17,7 @@ const listingSchema = new Schema({
             default: "https://unsplash.com/photos/neon-signs-in-shibuya-tokyo-street-p8lNJRI9MRc"
         }
     },
-    price: String,
+    price: Number,
     location: String,
     country: String,
 })
